@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+                <title>Document</title>
+                <style>
+                    * {box-sizing: border-box}
+                    
+                    /* Set height of body and the document to 100% */
+                    body, html {
+                        height: 100%;
+                        margin: 0;
+                        font-family: Arial;
+                    }
+                    
+                    .wow{
+                        background-image: url("https://4.bp.blogspot.com/-HqmT12QaU8c/W5s_k-VGvlI/AAAAAAAAAIY/Ga_JFHGe1is-RasAWpDNAcN-Vf2516gAACLcBGAs/s1600/Phong-nen-trang-dep-in-nhat-viet_%252818%2529.jpg");
+                        height: 20%;
+                    }
+                    
+                    .abc{
+                        display: flex;
+                        flex-flow: row; 
+                        justify-content: right ;
+                        font-family: 'Permanent Marker', cursive;
+                        color: rgb(44, 75, 33);
+                    }
+                    #register {
+                        height: 100%;
+                        padding: 10px 10px;
+                        margin: 50px;
+                        display: flex;
+                        justify-content: center;
+                        justify-content: space-between
+                    }
+                    
+                </style>
+            </head>
+<body>
+    <div class="wow">   
+        <div class="abc">
+            <h1 style="font-size:3.5vw;">COMPANY PROFILE</h1>
+            <form class="example" action="" style="margin:auto;max-width:300px" method="POST">
+                <input type="search" placeholder="Search...." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+            
+    <form method="POST">
+        <div id="register">
+            <div id="name">Your company name:<br><input type="text" name="title" placeholder="Công ty TNHH Ánh Dương"><br></div>
+            <div id="add">Your company address:<br><input type="text" name="address" placeholder="Hà Nội"><br></div>
+            <div id="selection">Your industry:<br><select name="industries">
+            <option value="agriculture">Agriculture</option>
+            <option value="safety">Safety</option>
+            <option value="automotive">Automotive</option>
+            <option value="oilgas">Oil & gas</option>
+            <option value="packaged">Packaged</option>
+            <option value="telecom">Telecommunication</option>
+            </select><br></div>
+            <div>
+            <button>Submit</button>
+            </div>    
+        </div>
+    </form>
+</body>
+</html>

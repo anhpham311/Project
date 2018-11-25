@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;}
+        
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            
+        }
+        
+        input[type=submit] {
+            background-color: grey;
+            color: black;
+            padding: 15px 50px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;   
+        }
+        
+        input[type=submit]:hover {
+            background-color: #ef77ef;
+        }
+        
+        .container {
+            border-radius: 5px;
+            background-color: lightgrey;
+            padding: 20px;
+        }
+        </style>
+</head>
+<body>
+    
+<h3>Contact </h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">United States of America (USA)</option>
+      <option value="viet nam">Viet Nam</option>
+      <option value="brazil">Brazil</option>
+      <option value="bulgari">Bulgari</option>
+      <option value="russia">Russia</option>
+      <option value="china">China</option>
+      <option value="quatar">Quatar</option>
+      <option value="indonesia">Indonesia</option>
+      <option value="iceland">Iceland</option>
+      <option value="argentina">Argentina</option>
+      <option value="Japan">Japan</option>
+      <option value="Singapore">Singapore</option>
+      <option value="South Korea">South Korea</option>
+      <option value="Spain">Spain</option>
+      <option value="Laos">Laos</option>
+      <option value="Cambodia">Cambodia</option>
+      <option value="Costa Rica">Costa Rica</option>
+      <option value="Croatia">Croatia</option>
+      <option value="Luxembourg">Luxembourg</option>
+      <option value="Mexico">Mexico</option>
+      <option value="Germany">Germany</option>
+      <option value="North Korea">North Korea</option>
+      <option value="United Kingdom (UK)">United Kingdom (UK)</option>
+      <option value="United Arab Emirates (UAE)">United Arab Emirates (UAE)</option>
+      <option value="Uruguay">Uruguay</option>
+      <option value="Uzbekistan">Uzbekistan</option>
+      <option value="Turkey">Turkey</option>
+      <option value="Thailand">Thailand</option>
+      <option value="Taiwan">Taiwan</option>
+      <option value="Switzerland">Switzerland</option>
+      <option value="Sweden">Sweden</option>
+
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

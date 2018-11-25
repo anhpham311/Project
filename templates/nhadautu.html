@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright|Courgette|Permanent+Marker" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+
+/*back ground img*/
+.bg-img {
+  /* The image used */
+  background-image: url("https://4.bp.blogspot.com/-HqmT12QaU8c/W5s_k-VGvlI/AAAAAAAAAIY/Ga_JFHGe1is-RasAWpDNAcN-Vf2516gAACLcBGAs/s1600/Phong-nen-trang-dep-in-nhat-viet_%252818%2529.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+
+/*slide show */
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px; 
+  position: relative;
+  /* width: 800px;
+  height: 400px; */
+}
+
+.one{
+  background-image: url("http://images.ndh.vn/Images/Uploaded/Share/2015/01/30/785quy-dau-tu.jpg");
+  background-size: cover ;
+  height: 600px;
+  width: 1300px;
+}
+
+.two{
+  background-image: url("http://www.brandsvietnam.com/upload/forum2/2017/10/13767Fintech_1508429493.jpg");
+  background-size: cover ;
+  height: 600px;
+  width: 1279px;
+}
+
+.three{
+  background-image: url("http://www.kynang.edu.vn/wp-content/uploads/personal-finance.jpg");
+  background-size: cover ;
+  height: 600px;
+  width: 1279px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: rgb(56, 17, 56);
+  font-size: 50px;
+  padding: 15px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Cormorant Upright', serif;
+
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.haha{
+  font-family: 'Permanent Marker', cursive;
+  color: rgb(44, 75, 33);
+}
+
+.hihi{
+  padding-left: 410px;
+  /* font-family: 'Permanent Marker', cursive; */
+  font-family: 'Courgette', cursive;
+  color: #0f300f;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Scroll conttent*/
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.header h2 {
+  text-align: center;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
+
+.content {
+  padding: 10px 0;
+  margin: 5px auto 0 50px;
+  width: 80%;
+  font-family: 'Courgette', cursive;
+  color: #0f300f;
+  font-size: 35px;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*+++++++============================================================================================*/
+
+</style>
+
+<body>
+<div class="bg-img">
+
+<div class="haha">
+    <a href="/"><h1 style="font-size:4vw;">STARTUP CONNECT</h1></a>
+</div>
+<div>
+    
+</div>
+<!-- slide show -->
+<div>
+  <div class="hihi">
+    <h1> Các tiện ích dành cho nhà đầu tư </h1>
+  </div>
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <div class="text">Dễ dàng tìm kiếm cơ hội đầu tư mới</div>
+        <div class="one"></div>
+        <div class="text">Dễ dàng tìm kiếm cơ hội đầu tư mới</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <div class="two"></div>
+        <div class="text">Dễ dàng định giá start-ups</div>
+    </div> 
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <div class="three"></div>
+        <div class="text">Dễ dàng quản lí khoản đầu tư của bạn </div>
+    </div>    
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- scroll conttent -->
+
+  <div class="content">
+      <h1>Investment Process</h1>
+      <ol>
+        <li>Đăng Kí Tài Khoản</li>
+        <li>Chọn Nơi Bạn Muốn Đầu Tư</li>
+        <li>Chuyển Tiền Đầu Tư Theo Như Cam Kết</li>
+        <li>Nhận Cổ Tức</li>
+      </ol>
+</div>     
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+              
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+              
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+              
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+
+</script>
+                      
+
+</body>
+</html>

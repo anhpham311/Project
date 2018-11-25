@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {box-sizing: border-box}
+        
+        /* Set height of body and the document to 100% */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial;
+        }
+        
+        .wow{
+            background-image: url("https://4.bp.blogspot.com/-HqmT12QaU8c/W5s_k-VGvlI/AAAAAAAAAIY/Ga_JFHGe1is-RasAWpDNAcN-Vf2516gAACLcBGAs/s1600/Phong-nen-trang-dep-in-nhat-viet_%252818%2529.jpg");
+        }
+
+        .tablink{
+            font-family: 'Cookie', cursive;
+            font-size: 25px ;
+        }
+
+        /* Style tab links */
+        .tablink {
+            background-color: #555;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 30px;
+            width: 16.66%;
+        }
+        
+        .tablink:hover {
+            background-color: #777;
+        }
+        
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+            color: white;
+            display: none;
+            padding: 100px 20px;
+            height: 100%;
+        }
+        .abc{
+            display: flex;
+            flex-flow: row; 
+            justify-content: right ;
+            font-family: 'Permanent Marker', cursive;
+            color: rgb(44, 75, 33);
+        }
+
+        #Agriculture{background-color: grey;}
+        #Safety {background-color: grey;}
+        #Automotive {background-color: grey;}
+        #OilGas {background-color: grey;}
+        #Packaged {background-color: grey;}
+        #Telecommunications {background-color: grey;}
+    </style>
+</head>
+<body>  
+  <div class="wow">   
+    <div class="abc">
+        <h1 style="font-size:3.5vw;">COMPANY PROFILE</h1>
+            <form class="example" action="" style="margin:auto;max-width:300px" method="POST">
+                <input type="search" placeholder="Search...." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+    </div>
+
+    <button class="tablink" onclick="openPage('Agriculture', this, 'grey')">Agriculture</button>
+    <button class="tablink" onclick="openPage('Safety', this, 'grey')" id="defaultOpen">Safety</button>
+    <button class="tablink" onclick="openPage('Automotive', this, 'grey')">Automotive</button>
+    <button class="tablink" onclick="openPage('OilGas', this, 'grey')">Oil & Gas</button>
+    <button class="tablink" onclick="openPage('Packaged', this, 'grey')">Packaged</button>
+    <button class="tablink" onclick="openPage('Telecommunications', this, 'grey')">Telecommunications</button>
+    
+
+    <div id="Agriculture" class="tabcontent">
+      <h3>Agriculture</h3>
+      <div>
+          {% for t in agriculture %}
+            <p><b>{{ t.title }}</b></p>
+            <p> {{ t.address }}</p>
+          {% endfor %}
+      </div>
+    </div>
+
+    <div id="Safety" class="tabcontent">
+      <h3>Safety</h3>
+      <div>
+        {% for t in safety %}
+          <p><b>{{ t.title }}</b></p>
+          <p> {{ t.address }}</p>
+        {% endfor %}
+    </div>
+    </div>
+
+    <div id="Automotive" class="tabcontent">
+        <h3>Automotive</h3>
+        <div>
+            {% for t in automotive %}
+              <p><b>{{ t.title }}</b></p>
+              <p> {{ t.address }}</p>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div id="OilGas" class="tabcontent">
+        <h3>Oil & Gas</h3>
+        <div>
+            {% for t in oilgas %}
+                <p><b>{{ t.title }}</b></p>
+                <p> {{ t.address }}</p>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div id="Packaged" class="tabcontent">
+        <h3>Packaged</h3>
+        <div>
+            {% for t in packaged %}
+                <p><b>{{ t.title }}</b></p>
+                <p> {{ t.address }}</p>
+            {% endfor %}
+        </div>
+    </div>         
+
+    <div id="Telecommunications" class="tabcontent">
+        <h3>Telecommunications</h3>
+        <div>
+            {% for t in telecom %}
+                <p> {{ t.title }}</p>
+                <p> {{ t.address }}</p>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script>
+    function openPage(pageName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName('tabcontent');
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+    }
+    // Get the element with id="defaultOpen" and click on it
+    // document.getElementById("defaultOpen").click();
+    </script>
+     
+</body>
+</html>
