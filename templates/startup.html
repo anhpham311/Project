@@ -27,6 +27,7 @@
 }
 
 .abc{
+  font-size: 20cm;
   display: flex;
   flex-flow: row; 
   justify-content: right ;
@@ -38,6 +39,15 @@
   padding-left: 500px;
   font-size: 28px;
   color: #4b6d4b;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-content: right;
+}
+
+#register {
+  width: 100%;
+  padding: 1px;
 }
 
 * {
@@ -127,12 +137,12 @@ body {
 </style>
 <body>
 <div class="bg-img">
-  <div class ="abc" style="font-size:4vw;">
+  <div class ="abc" style="font-size:2vw;">
     <a href="/"><h1>STARTUP CONNECT</h1></a>
   </div>
-  <div class ="starup">
-    <h1>Start-up </h1>
-    <a href="/registercompany"><button>Register your company now</button></a>
+  <div class ="starup" style="font-size:1vw;">
+    <a href="/registercompany" id=register><h1>Register your company now</h1></a>
+    <h2>or scroll down for latest news</h2>
   </div>
   <div class="container">
     <div class="one">  
